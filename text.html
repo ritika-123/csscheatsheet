@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
+	<title>CSS CHEATSHEET</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<section class="text">
+		<h1>TEXT</h1>
+		<p>
+			Query 2: In Assignment 6 ‐ Q 3, key length in triple‐DES is 168 bits but in question
+there is "Effective", so effective key length in triple‐DES should be 112 bits (As a
+search result on Google).
+If data packet has triple node encryption, how could it still reveal the data?
+Triple‐DES uses E‐D‐E for encryption with keys K1, K2, K3; and D‐E‐D for decryption
+with the keys used in reverse order. If K1, K2, K3 are different then the effective key
+size is 168 bits. However, in many usages of triple‐DES, K1 = K3, and the effective
+key size becomes 112 bits.
+An encrypted message can be revealed only if the attacker finds a way to exploit
+some weakness in the encryption algorithm.
+3<br>
+Query 4: What is the meaning of broadcast?
+When a message is sent out to all the hosts in a network, it is called broadcast.
+Query 5: What is difference between ethical hackers and other hackers? What is
+use and purpose of ethical hackers in companies?
+Ethical hackers mount attacks on network with non‐malicious intent.
+Ethical hackers try to find out vulnerabilities in a network, so that they can be
+mitigated.
+4<br>
+All TCP messages (segments) are given to IP for delivery to the final destination in the form of packets. The TCP layer at the final destination checks whether all packets have arrived; if some are missing, an explicit req
+10/21/2019
+3<br>
+Query 6: In one way hash function, the message (M) and key (K) are appended
+together and perform hash function on it and sending to receiver. Why the
+receiver again need to append key to M? Already it contains "message and key",
+if we append the key with hashed message then the output hash value will
+different from sender's hash value?
+The typical flow is like this:
+• The secret key value K is appended to the message M, and hash is computed as
+H = hash (K || M).
+• M and H are sent to the receiver, who also knows the secret key K.
+• The receiver re‐computes the hash H’ = hash (K || M’) based on the received
+message M’.
+• Receiver compares H’ with the received hash value.
+5
+Query 7: In TCP it provides a reliable data transfer, whereas IP provides unreliable
+data transfer. Then how we are going to get the reliability of the data transfer?
+All TCP messages (segments) are given to IP for delivery to the final destination in
+the form of packets. The TCP layer at the final destination checks whether all
+packets have arrived; if some are missing, an explicit request for retransmission is
+sent to the sender. In this way, TCP ensures reliability even though the underlying IP
+is not reliable.
+6
+10/21/2019
+4
+		</p>
+		
+	</section>
+</body>
+</html>

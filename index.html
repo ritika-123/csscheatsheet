@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
+	<title>CSS CHEATSHEET</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<section>
+	<nav>
+		<ul>
+			<li>
+				<a href="#animation">Animation</a>
+			</li>
+			<li>
+				<a href ="#background">Background</a>
+			</li>
+			<li>
+				<a href="#border">Border</a>
+			</li>
+<!--			<li>
+				<a href="#color">Color</a>
+			</li>
+			<li>
+				<a href="#dimension">Dimension</a>
+			</li>
+			<li>
+				<a href="#generatedcontent">Generated Content</a>
+			</li>-->
+			<li>
+				<a href="#box">Box</a>
+			</li> 
+
+			<li>
+				<a href="#font">Font</a>
+			</li>
+	<!--		<li>
+				<a href="#list">List</a>
+			</li>
+			<li>
+				<a href="#margin">Margin</a>
+			</li>
+			<li>
+				<a href="#multi-columnlayout">Multi-Column Layout</a>
+			</li>
+			<li>
+				<a href="#outline">Outline</a>
+			</li>
+			<li>
+				<a href="#padding">Padding</a>
+			</li>
+			<li>
+				<a href="#print">Print</a>
+			</li>  -->
+			<li>
+				<a href="#table">Table</a>
+			</li>
+			<li>
+				<a href="#text">Text</a>
+			</li>
+			<li>
+				<a href="#transform">Transform</a>
+			</li>
+			<li>
+				<a href="#transition">Transition</a>
+			</li>
+	<!--		<li>
+				<a href="#visualformatting">Visual Formatting</a>
+			</li>   -->
+
+		</ul>
+	</nav>
+	</section>
+	<section>
+		<div class="content">
+			<h2 id="animation">Animation</h2>
+			<ul>
+				<li>animation-name
+					<ul class="inner-list">
+						<li>keyframe-name</li>
+						<li>none</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>animation-delay
+					<ul class="inner-list">
+						<li>time</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>animation-direction
+					<ul class="inner-list">
+						<li>normal</li>
+						<li>reverse</li>
+						<li>alternate</li>
+						<li>alternate-reverse</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>animation-duration
+					<ul class="inner-list">
+						<li>time</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>animation-fill-mode
+					<ul class="inner-list">
+						<li>none</li>
+						<li>forwards</li>
+						<li>backwards</li>
+						<li>both</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>animation-iteration-count
+					<ul class="inner-list">
+						<li>number</li>
+						<li>infinite</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>animation-play-state
+					<ul class="inner-list">
+						<li>paused</li>
+						<li>running</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>animation-timing-function
+					<ul class="inner-list">
+						<li>linear</li>
+						<li>ease</li>
+						<li>ease-in</li>
+						<li>ease-out</li>
+						<li>ease-in-out</li>
+						<li>cubic-bezier(n,n,n,n)</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+			</ul>
+			<h2 id="background">Background</h2>
+			<ul>
+				<li>background-image
+					<ul class="inner-list">
+						<li>gradient</li>
+						<li>URL</li>
+						<li>none</li>
+					</ul>
+				</li>
+				<li>background-position
+					<ul class="inner-list">
+						<li>top left</li>
+						<li>top center</li>
+						<li>top right</li>
+						<li>center left</li>
+						<li>center center</li>
+						<li>center right</li>
+						<li>bottom left</li>
+						<li>bottom center</li>
+						<li>bottom right</li>
+						<li>x%, y%</li>
+						<li>x-pos, y-pos</li>
+					</ul>
+				</li>
+				<li>background-size
+					<ul class="inner-list">
+						<li>length</li>
+						<li>%</li>
+						<li>auto</li>
+						<li>contain</li>
+						<li>cover</li>
+					</ul>
+					
+				</li>
+				<li>background-repeat
+					<ul class="inner-list">
+						<li>repeat</li>
+						<li>repeat-x</li>
+						<li>repeat-y</li>
+						<li>no-repeat</li>
+					</ul>
+				</li>
+				<li>background-attachment
+					<ul class="inner-list">
+						<li>scroll</li>
+						<li>fixed</li>
+						<li>local</li>
+					</ul>
+
+				</li>
+				<li>background-origin
+					<ul class="inner-list">
+						<li>border-box</li>
+						<li>padding-box</li>
+						<li>content-box</li>
+					</ul>
+				</li>
+				<li>background-color
+					<ul class="inner-list">
+						<li>color</li>
+						<li>transparent</li>
+					</ul>
+					
+				</li>
+			</ul>
+			
+			
+			<h2 id="border">Border</h2>
+			<ul>
+				<li>border-bottom
+					<ul  class="inner-list">
+						<li>border-bottom-width</li>
+						<li>border-bottom-style</li>
+						<li>border-bottom-color</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-bottom-color
+					<ul class="inner-list">
+						<li>color</li>
+						<li>inherit</li>
+						<li>initial</li>
+						<li>transparent</li>
+					</ul>
+				</li>
+				<li>border-bottom-left-radius
+					<ul class="inner-list">
+						<li>length</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-bottom-right-radius
+					<ul class="inner-list">
+						<li>length</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-bottom-style
+					<ul class="inner-list">
+						<li>none</li>
+						<li>hidden</li>
+						<li>dotted</li>
+						<li>dashed</li>
+						<li>solid</li>
+						<li>double</li>
+						<li>groove</li>
+						<li>ridge</li>
+						<li>inset</li>
+						<li>ouset</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-bottom-width
+					<ul class="inner-list">
+						<li>thin</li>
+						<li>thick</li>
+						<li>medium</li>
+						<li>length</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-collapse
+					<ul class="inner-list">
+						<li>separate</li>
+						<li>collapse</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-image
+					<ul class="inner-list">
+						<li>source slice width outset repeat</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-image-outset
+					<ul class="inner-list">
+						<li>length</li>
+						<li>number</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-image-repeat
+					<ul class="inner-list">
+						<li>stretch</li>
+						<li>repeat</li>
+						<li>round</li>
+						<li>space</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-image-slice
+					<ul class="inner-list">
+						<li>number</li>
+						<li>percentage</li>
+						<li>fill</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-image-source
+					<ul class="inner-list">
+						<li>none</li>
+						<li>image</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-image-width
+					<ul  class="inner-list">
+						<li>number</li>
+						<li>auto</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-left
+					<ul class="inner-list">
+						<li>border-left-width border-left-style border-left-color</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-left-color
+					<ul class="inner-list">
+						<li>color</li>
+						<li>transparet</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-left-style
+					<ul class="inner-list">
+						<li>none</li>
+						<li>hidden</li>
+						<li>dotted</li>
+						<li>dashed</li>
+						<li>solid</li>
+						<li>double</li>
+						<li>groove</li>
+						<li>ridge</li>
+						<li>inset</li>
+						<li>ouset</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-left-width
+					<ul class="inner-list">
+						<li>thin</li>
+						<li>thick</li>
+						<li>medium</li>
+						<li>length</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-radius
+					<ul class="inner-list">
+						<li>length</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-right
+					<ul class="inner-list">
+						<li>border-right-width border-right-style border-right-color</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-right-color
+					<ul class="inner-list">
+						<li>color</li>
+						<li>transparet</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-right-style
+					<ul class="inner-list">
+						<li>none</li>
+						<li>hidden</li>
+						<li>dotted</li>
+						<li>dashed</li>
+						<li>solid</li>
+						<li>double</li>
+						<li>groove</li>
+						<li>ridge</li>
+						<li>inset</li>
+						<li>ouset</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-right-width
+					<ul class="inner-list">
+						<li>thin</li>
+						<li>thick</li>
+						<li>medium</li>
+						<li>length</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-spacing
+					<ul class="inner-list">
+						<li>length</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>border-style
+					<ul class="inner-list">
+						<li>none</li>
+						<li>hidden</li>
+						<li>dotted</li>
+						<li>dashed</li>
+						<li>solid</li>
+						<li>double</li>
+						<li>groove</li>
+						<li>ridge</li>
+						<li>inset</li>
+						<li>ouset</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+			</ul>
+			<h2 id="box">Box</h2>
+			<ul>
+				<li>box-shadow
+					<ul class="inner-list">
+						<li>offset-x offset-y blur-radius spread-radius color</li>
+						<li>none</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>box-sizing
+					<ul class="inner-list">
+						<li>content-box</li>
+						<li>padding-box</li>
+						<li>border-box</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h2 id="column">Column</h2>
+			<ul>
+				<li>column-count
+					<ul class="inner-list">
+						<li>number</li>
+						<li>auto</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>column-fill
+					<ul class="inner-list">
+						<li>balance</li>
+						<li>auto</li>
+						<li>initial</li>
+						<li>inherit</li>
+					    <li>inherit</li>
+					</ul>
+				</li>
+				<li>column-rule-color
+					<ul class="inner-list">
+						<li>color</li>
+						<li>inherit</li>
+					    <li>inherit</li>
+					</ul>
+				</li>
+				<li>column-rule-style
+					<ul class="inner-list">
+						<li>none</li>
+						<li>hidden</li>
+						<li>dotted</li>
+						<li>dashed</li>
+						<li>solid</li>
+						<li>double</li>
+						<li>groove</li>
+						<li>ridge</li>
+						<li>inset</li>
+						<li>ouset</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>column-rule-width
+					<ul class="inner-list">
+						<li>thin</li>
+						<li>thick</li>
+						<li>medium</li>
+						<li>length</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>column-span
+					<ul class="inner-list">
+						<li>none</li>
+						<li>all</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>column-width
+					<ul class="inner-list">
+						<li>length</li>
+						<li>auto</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<h2 id="fonts">Fonts</h2>
+			<ul>
+				<li>font-family
+					<ul class="inner-list">
+						<li>name</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>font-size
+					<ul class="inner-list">
+						<li>xx-small</li>
+						<li>x-small</li>
+						<li>small</li>
+						<li>medium</li>
+						<li>large</li>
+						<li>x-large</li>
+						<li>xx-large</li>
+						<li>smaller</li>
+						<li>larger</li>
+						<li>length</li>
+						<li>percentage</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>font-size-adjust
+					<ul class="inner-list">
+						<li>number</li>
+						<li>none</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>font-stretch
+					<ul class="inner-list">
+						<li>normal</li>
+						<li>ultra-condensed</li>
+						<li>extra-condensed</li>
+						<li>condensed</li>
+						<li>semi-condensed</li>
+						<li>semi-expanded</li>
+						<li>expanded</li>
+						<li>extra-expanded</li>
+						<li>ultra-expanded</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>font-style
+					<ul class="inner-list">
+						<li>normal</li>
+						<li>italic</li>
+						<li>oblique</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>font-variant
+					<ul class="inner-list">
+						<li>normal</li>
+						<li>small-caps</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>font-weight
+					<ul class="inner-list">
+						<li>normal</li>
+						<li>bold</li>
+						<li>bolder</li>
+						<li>lighter</li>
+						<li>100</li>
+						<li>200</li>
+						<li>300</li>
+						<li>400</li>
+						<li>500</li>
+						<li>600</li>
+						<li>700</li>
+						<li>800</li>
+						<li>900</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<h2 id="table">Table</h2>
+			<ul>
+				<li>table-layout
+					<ul class="inner-list">
+						<li>auto</li>
+						<li>fixed</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h2 id="text">Text</h2>
+			<ul>
+				<li>text-align
+					<ul class="inner-list">
+						<li>left</li>
+						<li>right</li>
+						<li>center</li>
+						<li>justify</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>text-align-last
+					<ul class="inner-list">
+						<li>auto</li>
+						<li>start</li>
+						<li>end</li>
+						<li>left</li>
+						<li>right</li>
+						<li>center</li>
+						<li>justify</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>text-decoration
+					<ul class="inner-list">
+						<li>none</li>
+						<li>underline</li>
+						<li>overline</li>
+						<li>line-through</li>
+						<li>blink</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>text-decoration-color
+					<ul class="inner-list">
+						<li>color</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>text-decoration-line
+					<ul class="inner-list">
+						<li>none</li>
+						<li>underline</li>
+						<li>overline</li>
+						<li>line-through</li>
+						<li>blink</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>text-decoration-style
+					<ul class="inner-list">
+						<li>solid</li>
+						<li>double</li>
+						<li>dotted</li>
+						<li>dashed</li>
+						<li>wavy</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>text-intend
+					<ul class="inner-list">
+						<li>length</li>
+						<li>percentage</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>text-justify
+					<ul class="inner-list">
+						<li>auto</li>
+						<li>none</li>
+						<li>inter-word</li>
+						<li>distribute</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>text-overflow
+					<ul class="inner-list">
+						<li>clip</li>
+						<li>ellipsis</li>
+						<li>string</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>text-shadow
+					<ul class="inner-list">
+						<li>offset-x offset-y blur-radius color</li>
+						<li>none</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h2 id="transform">Transform</h2>
+			<ul>
+				<li>transform-origin
+					<ul  class="inner-list">
+						<li>x-position</li>
+						<li>y-position</li>
+						<li>z-position</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>transform-style
+					<ul  class="inner-list">
+						<li>flat</li>
+						<li>preserve-3d</li>
+						
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+
+			</ul>
+			<h2 id="transition">Transition</h2>
+			<ul>
+				<li>transition-delay
+					<ul  class="inner-list">
+						<li>time</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>transition-duration
+					<ul  class="inner-list">
+						<li>time</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>transition-property
+					<ul  class="inner-list">
+						<li>property-name</li>
+						<li>none</li>
+						<li>all</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+				<li>transition-timing-function
+					<ul  class="inner-list">
+						<li>linear</li>
+						<li>ease</li>
+						<li>ease-in</li>
+						<li>ease-out</li>
+						<li>cubic-bezier(n, n, n, n)</li>
+						<li>initial</li>
+						<li>inherit</li>
+					</ul>
+				</li>
+
+			</ul>
+
+			
+		</div>
+		<div class="iframes">
+				<iframe height="255" style="width: 100%;" scrolling="no" title="transition" src="https://codepen.io/ritika123/embed/GRZEyzM?height=255&theme-id=light&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/ritika123/pen/GRZEyzM'>transition</a> by ritika
+  (<a href='https://codepen.io/ritika123'>@ritika123</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+		</div>
+	</section>
+
+</body>
+</html>
